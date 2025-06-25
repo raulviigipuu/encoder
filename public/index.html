@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Simple tool for URL and Base64 encoding/decoding." />
+    <title>URL & Base64 Tool</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="canonical" href="https://raul.viigipuu.ee/apps/encoder" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="js/script.js" defer></script>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="URL & Base64 Decoder" />
+    <meta property="og:description" content="Simple tool for URL and Base64 encoding/decoding." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://raul.viigipuu.ee/apps/encoder" />
+    <meta property="og:image" content="https://raul.viigipuu/apps/encoder/images/og-image.jpg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="URL & Base64 Tool" />
+    <meta name="twitter:description" content="Simple tool for URL and Base64 encoding/decoding." />
+    <meta name="twitter:image" content="https://raul.viigipuu/apps/encoder/images/og-image.jpg" />
+    <meta name="twitter:url" content="https://raul.viigipuu/apps/encoder" />
+
+    <!-- JSON-LD -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "URL & Base64 Tool",
+    "url": "https://raul.viigipuu.ee/apps/encoder",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "All",
+    "description": "Simple tool for URL and Base64 encoding/decoding.",
+    "author": {
+      "@type": "Person",
+      "name": "Raul Viigipuu",
+      "url": "https://raul.viigipuu.ee"
+    },
+    "browserRequirements": "Requires JavaScript enabled",
+    "inLanguage": "en"
+  }
+  </script>
+</head>
+
+<body>
+    <main>
+        <h1>🛠️ URL & Base64 Utility</h1>
+
+        <section>
+            <h2>🔗 URL Encoder / Decoder</h2>
+            <textarea id="urlInput" placeholder="Enter text or encoded URL..."></textarea>
+            <div class="button-group">
+                <button id="encodeUrlBtn">Encode URL</button>
+                <button id="decodeUrlBtn">Decode URL</button>
+            </div>
+            <div class="output">
+                <label for="urlOutput">Result:</label>
+                <textarea id="urlOutput" readonly></textarea>
+                <button class="copyBtn" data-target="urlOutput">Copy</button>
+                <span class="copyMessage" id="copyMessage-urlOutput"></span>
+            </div>
+        </section>
+
+        <section>
+            <h2>🧬 Base64 Encoder / Decoder</h2>
+            <textarea id="base64Input" placeholder="Enter text or base64 string..."></textarea>
+            <div class="base64-buttons">
+                <button id="encodeBase64Btn">Encode Base64</button>
+                <button id="decodeBase64Btn">Decode Base64</button>
+            </div>
+            <div class="output">
+                <label for="base64Output">Result:</label>
+                <textarea id="base64Output" readonly></textarea>
+                <button class="copyBtn" data-target="base64Output">Copy</button>
+                <span class="copyMessage" id="copyMessage-base64Output"></span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>🍪 This site does not use cookies.</p>
+    </footer>
+</body>
+
+</html>

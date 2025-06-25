@@ -1,0 +1,121 @@
+/* ========== Site-Specific Styles ========== */
+
+body {
+    background-color: #f7f7f7;
+}
+
+main {
+    padding: 2rem 1rem;
+    width: 100%;
+    max-width: 800px;
+    margin: 3rem auto;
+    background-color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    border: 1px solid #eee;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: var(--font-lg);
+}
+
+section {
+    margin-bottom: 2.5rem;
+}
+
+textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 0.75rem;
+    font-size: var(--font-md);
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    resize: vertical;
+    background-color: #fff;
+    color: #222;
+    transition: border-color 0.2s;
+}
+
+textarea:focus {
+    outline: none;
+    border-color: #aaa;
+}
+
+button {
+    padding: 0.6rem 1.2rem;
+    font-size: var(--font-md);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.base64-buttons,
+.button-group {
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.output {
+    margin-top: 1rem;
+    position: relative;
+}
+
+.copyBtn {
+    margin-top: 0.5rem;
+    background-color: #28a745;
+}
+
+.copyBtn:hover {
+    background-color: #1e7e34;
+}
+
+.copyMessage {
+    display: none;
+    font-size: var(--font-sm);
+    color: #28a745;
+    position: absolute;
+    right: 0.5rem;
+    top: -1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.copyMessage.show {
+    display: inline;
+    opacity: 1;
+}
+
+/* ========== Responsive Adjustments ========== */
+@media (max-width: 600px) {
+    button {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .base64-buttons,
+    .button-group {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    textarea {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+    }
+}
